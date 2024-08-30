@@ -23,5 +23,3 @@ alias dkwork='/usr/bin/docker compose exec workspace bash'
 alias dkrun='/usr/bin/docker compose run --rm'
 
 fish_config theme choose "Rosé Pine"
-
-starship init fish | source

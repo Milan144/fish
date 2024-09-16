@@ -3,8 +3,7 @@ export PATH="$PATH:$HOME/.local/share/neovim/bin"
 alias v="nvim"
 alias vim="nvim"
 
-# Flutter
-export PATH="$PATH:$HOME/development/flutter/bin"
+export PATH="$PATH:$HOME/.config/emacs/bin"
 
 # Git
 alias gst="git status"
@@ -25,11 +24,5 @@ alias dkexec='/usr/bin/docker compose exec'
 alias dkwork='/usr/bin/docker compose exec workspace bash'
 alias dkrun='/usr/bin/docker compose run --rm'
 
-# Theme
-fish_config theme choose "Rosé Pine"
-
-# Export ORG TO PDF
-function orgpdf
-    emacs --batch -l org -eval "(progn (find-file \"memoire.org\") (org-latex-export-to-pdf))"
-end
-
+fish_config theme save "Catppuccin Mocha"
+starship init fish | source

@@ -24,5 +24,4 @@ alias dkexec='/usr/bin/docker compose exec'
 alias dkwork='/usr/bin/docker compose exec workspace bash'
 alias dkrun='/usr/bin/docker compose run --rm'
 
-fish_config theme save "Catppuccin Mocha"
 starship init fish | source
